@@ -1,0 +1,120 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Email Templates\n"
+"POT-Creation-Date: 2015-07-20 15:18+0200\n"
+"PO-Revision-Date: 2015-06-03 14:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: Yithemes <plugins@yithemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
+
+#: ../class.yith-wcpb-admin.php:157
+#, php-format
+msgid "%1$s item [%2$s bundled elements]"
+msgid_plural "%1$s items [%2$s bundled elements]"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../class.yith-wcpb-admin.php:170
+msgctxt "Admin: type of product"
+msgid "Product Bundle"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:188
+msgctxt "Admin: quantity of the bundled product."
+msgid "Quantity"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:232
+msgid "Bundle Options"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:259
+msgid "Close all"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:260
+msgid "Expand all"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:286
+msgid "Search for a product&hellip;"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:288
+msgid "Add Product"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:325
+msgid "Settings"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:347
+msgid "Plugin Documentation"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:377 ../class.yith-wcpb-admin.php:378
+msgid "Product Bundles"
+msgstr ""
+
+#: ../class.yith-wcpb-admin.php:412
+msgid ""
+"You can add only simple products with the FREE version of YITH WooCommerce "
+"Product Bundles"
+msgstr ""
+
+#: ../class.yith-wcpb-frontend.php:373
+msgid ""
+"You cannot add this quantity of items, because there are not enough in stock."
+msgstr ""
+
+#: ../includes/class.yith-wc-product-bundle.php:156
+msgid "Add to cart"
+msgstr ""
+
+#: ../includes/class.yith-wc-product-bundle.php:156
+msgid "Read More"
+msgstr ""
+
+#: ../init.php:43
+msgid ""
+"YITH WooCommerce Product Bundles is enabled but not effective. It requires "
+"WooCommerce in order to work."
+msgstr ""
+
+#: ../init.php:52
+msgid ""
+"You can't activate the free version of YITH WooCommerce Product Bundles "
+"while you are using the premium one."
+msgstr ""
+
+#: ../plugin-options/settings-options.php:8
+msgid "General Options"
+msgstr ""
+
+#: ../templates/admin/admin-bundled-product-item.php:16
+msgid "Remove"
+msgstr ""
+
+#: ../templates/admin/admin-bundled-product-item.php:17
+msgid "Click to toggle"
+msgstr ""
+
+#: ../templates/single-product/add-to-cart/yith-bundle.php:54
+msgid "In stock"
+msgstr ""
+
+#: ../templates/single-product/add-to-cart/yith-bundle.php:56
+msgid "Out of stock"
+msgstr ""
