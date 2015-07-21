@@ -1,13 +1,13 @@
 <?php
 
 // Exit if accessed directly
-! defined( 'YITH_WCBM' )  && exit();
+! defined( 'YITH_WCPB' )  && exit();
 
 return array(
 	'premium' => array(
 		'landing' => array(
 			'type' => 'custom_tab',
-			'action' => 'yith_wcbm_premium_tab'
+			'action' => 'yith_wcpb_premium_tab'
 		)
 	)
 );

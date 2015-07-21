@@ -52,7 +52,7 @@ if( !class_exists( 'YITH_WCPB_Admin' ) ) {
         /**
          * @var string Premium version landing link
          */
-        protected $_premium_landing = '#';
+        protected $_premium_landing = 'https://yithemes.com/themes/plugins/yith-woocommerce-product-bundles';
 
         /**
          * @var string Quick View panel page
@@ -113,6 +113,8 @@ if( !class_exists( 'YITH_WCPB_Admin' ) ) {
             add_filter( 'woocommerce_admin_order_item_count',  array( $this, 'woocommerce_admin_order_item_count' ), 10, 2 );
             add_filter( 'woocommerce_hidden_order_itemmeta', array( $this, 'woocommerce_hidden_order_itemmeta'));
 
+            // Premium Tabs
+            add_action( 'yith_wcpb_premium_tab', array( $this, 'show_premium_tab' ) );
 		}
 
         /**
@@ -366,7 +368,7 @@ if( !class_exists( 'YITH_WCPB_Admin' ) ) {
 
             $admin_tabs_free = array(
                 //'settings'      => __( 'Settings', 'yith-wcpb' ),
-                //'premium'       => __( 'Premium Version', 'yith-wcpb' )
+                'premium'       => __( 'Premium Version', 'yith-wcpb' )
                 );
 
             $admin_tabs = apply_filters('yith_wcpb_settings_admin_tabs', $admin_tabs_free);
@@ -411,6 +413,29 @@ if( !class_exists( 'YITH_WCPB_Admin' ) ) {
                 wp_localize_script( 'yith_wcpb_bundle_options_metabox', 'ajax_object', array( 
                     'free_not_simple' => __('You can add only simple products with the FREE version of YITH WooCommerce Product Bundles', 'yith-wcpb') ) );
             }
+        }
+
+         /**
+         * Show premium landing tab
+         *
+         * @return   void
+         * @since    1.0
+         * @author  Leanza Francesco <leanzafrancesco@gmail.com>
+         */
+        public function show_premium_tab(){
+            $landing = YITH_WCPB_TEMPLATE_PATH . '/premium.php';
+            file_exists( $landing ) && require( $landing );
+        }
+
+        /**
+         * Get the premium landing uri
+         *
+         * @since   1.0.0
+         * @author  Andrea Grillo <andrea.grillo@yithemes.com>
+         * @return  string The premium landing link
+         */
+        public function get_premium_landing_uri() {
+            return defined( 'YITH_REFER_ID' ) ? $this->_premium_landing . '?refer_id=' . YITH_REFER_ID : $this->_premium_landing . '?refer_id=1030585';
         }
     }
 }
