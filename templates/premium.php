@@ -337,7 +337,7 @@
             </div>
         </div>
     </div>
-    <div class="five section section-even clear">
+    <div class="seven section section-even clear">
         <div class="landing-container">
             <div class="col-1">
                 <img src="<?php echo YITH_WCPB_ASSETS_URL?>/images/07.png" alt="Discount" />
@@ -353,7 +353,7 @@
             </div>
         </div>
     </div>
-    <div class="six section section-odd clear">
+    <div class="eight section section-odd clear">
         <div class="landing-container">
             <div class="col-2">
                 <div class="section-title">
@@ -369,7 +369,7 @@
             </div>
         </div>
     </div>
-    <div class="five section section-even clear">
+    <div class="nine section section-even clear">
         <div class="landing-container">
             <div class="col-1">
                 <img src="<?php echo YITH_WCPB_ASSETS_URL?>/images/09.png" alt="Widget" />
@@ -385,7 +385,7 @@
             </div>
         </div>
     </div>
-    <div class="six section section-odd clear">
+    <div class="ten section section-odd clear">
         <div class="landing-container">
             <div class="col-2">
                 <div class="section-title">
