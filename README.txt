@@ -27,7 +27,7 @@ Set how many items you bundle should have and choose the single products: they w
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
 3. Activate `YITH WooCommerce Product Bundles` from Plugins page
 
-YITH WooCommerce Product Bundles will add a new submenu called "Custom Order Status" under "YIT Plugins" menu. Here you are able to configure all the plugin settings.
+YITH WooCommerce Product Bundles will add a new product type called "Product Bundle" in the Admin Product Edit page.
 
 
 == Screenshots ==
