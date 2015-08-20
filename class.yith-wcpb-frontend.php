@@ -493,7 +493,8 @@ if( ! class_exists( 'YITH_WCPB_Frontend' ) ) {
             if ( isset( $values['bundled_by'] ) ){
                 wc_add_order_item_meta( $item_id, '_bundled_by', $values[ 'bundled_by' ] );
             }else{
-                wc_add_order_item_meta( $item_id, '_cartstamp', $values[ 'cartstamp' ] );
+                if (isset($values[ 'cartstamp' ]))
+                    wc_add_order_item_meta( $item_id, '_cartstamp', $values[ 'cartstamp' ] );
             }
         }
 
