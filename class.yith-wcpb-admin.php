@@ -66,7 +66,7 @@ if( !class_exists( 'YITH_WCPB_Admin' ) ) {
          * @access public
          * @since 1.0.0
          */
-        public $doc_url = 'http://yithemes.com/docs-plugins/yith-woocommerce-product-bundle/';
+        public $doc_url = 'http://yithemes.com/docs-plugins/yith-woocommerce-product-bundles/';
 
         public $templates = array();
 
