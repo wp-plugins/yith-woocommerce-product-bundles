@@ -2,17 +2,17 @@
 /**
  * Main class
  *
- * @author Yithemes
+ * @author  Yithemes
  * @package YITH WooCommerce Product Bundles
  * @version 1.0.0
  */
 
 
-if ( ! defined( 'YITH_WCPB' ) ) {
+if ( !defined( 'YITH_WCPB' ) ) {
     exit;
 } // Exit if accessed directly
 
-if ( ! class_exists( 'YITH_WCPB' ) ) {
+if ( !class_exists( 'YITH_WCPB' ) ) {
     /**
      * YITH WooCommerce Product Bundles
      *
@@ -50,8 +50,8 @@ if ( ! class_exists( 'YITH_WCPB' ) ) {
          * @return \YITH_WCPB
          * @since 1.0.0
          */
-        public static function get_instance(){
-            if( is_null( self::$instance ) ){
+        public static function get_instance() {
+            if ( is_null( self::$instance ) ) {
                 self::$instance = new self();
             }
 
@@ -67,16 +67,16 @@ if ( ! class_exists( 'YITH_WCPB' ) ) {
         public function __construct() {
 
             // Load Plugin Framework
-            add_action( 'after_setup_theme', array( $this, 'plugin_fw_loader' ), 1 );
+            add_action( 'plugins_loaded', array( $this, 'plugin_fw_loader' ), 15 );
 
-                // Class admin
-                if ( is_admin() ) {
-                    YITH_WCPB_Admin();
-                }
-                // Class frontend
-                //else{
-                    YITH_WCPB_Frontend();
-                //}
+            // Class admin
+            if ( is_admin() ) {
+                YITH_WCPB_Admin();
+            }
+            // Class frontend
+            //else{
+            YITH_WCPB_Frontend();
+            //}
         }
 
 
@@ -89,11 +89,13 @@ if ( ! class_exists( 'YITH_WCPB' ) ) {
          * @author Andrea Grillo <andrea.grillo@yithemes.com>
          */
         public function plugin_fw_loader() {
-
-            if ( ! defined( 'YIT' ) || ! defined( 'YIT_CORE_PLUGIN' ) ) {
-                require_once( 'plugin-fw/yit-plugin.php' );
+            if ( !defined( 'YIT_CORE_PLUGIN' ) ) {
+                global $plugin_fw_data;
+                if ( !empty( $plugin_fw_data ) ) {
+                    $plugin_fw_file = array_shift( $plugin_fw_data );
+                    require_once( $plugin_fw_file );
+                }
             }
-
         }
     }
 }
@@ -104,7 +106,8 @@ if ( ! class_exists( 'YITH_WCPB' ) ) {
  * @return \YITH_WCPB
  * @since 1.0.0
  */
-function YITH_WCPB(){
+function YITH_WCPB() {
     return YITH_WCPB::get_instance();
 }
+
 ?>

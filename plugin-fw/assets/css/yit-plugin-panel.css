@@ -631,6 +631,13 @@
     width: 6em;
 }
 
+/* === YIT FRAMEWORK === */
+.plugin-card .plugin-icon img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
 /* === Responsive === */
 
 @media (max-width: 767px) {}

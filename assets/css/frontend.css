@@ -5,6 +5,10 @@
  * @version 1.0.0
  */
 
+table.yith-wcpb-product-bundled-items{
+	margin: 10px 0;
+}
+
 table.yith-wcpb-product-bundled-items tr{
 	margin:5px;
 	border:1px solid #ccc;

@@ -48,7 +48,7 @@ if ( ! class_exists( 'YIT_Licence' ) ) {
          * @var string The yithemes api uri
          * @since 1.0
          */
-        protected $_api_uri = 'http://www.yithemes.com';
+        protected $_api_uri = 'http://yithemes.com';
 
         /**
          * @var string The yithemes api uri query args
@@ -159,7 +159,7 @@ if ( ! class_exists( 'YIT_Licence' ) ) {
         public function localize_script() {
             wp_localize_script( 'yit-licence', 'licence_message', array(
                     'error'  => sprintf( _x( '%s field cannot be empty', '%s = field name', 'yith-plugin-fw' ), '%field%' ),  // sprintf must be used to avoid errors with '%field%' string in translation in .po file
-                    'errors' => sprintf( __( '%s and %s fields cannot be empty', 'yith-plugin-fw' ), '%field_1%', '%field_2' ),
+                    'errors' => sprintf( __( '%s and %s fields cannot be empty', 'yith-plugin-fw' ), '%field_1%', '%field_2%' ),
                     'server' => __( 'Unable to contact the remote server, please try again later. Thanks!', 'yith-plugin-fw' )
                 )
             );
